@@ -1,0 +1,10 @@
+.footer {
+  text-align: center;
+  color: $text-color;
+  &__title {
+    font-size: $smaller-font-size;
+  }
+  &__icon {
+    font-size: $smaller-font-size;
+  }
+}

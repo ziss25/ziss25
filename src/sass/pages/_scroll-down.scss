@@ -1,0 +1,23 @@
+.scroll-down {
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+  font-size: $normal-font-size;
+  &__title {
+    color: $title-color;
+  }
+  &__icon {
+    color: $red;
+    transform: translateY(3px);
+    animation: scroll-down-animate 1s linear 2s infinite alternate;
+  }
+}
+
+@keyframes scroll-down-animate {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(3px);
+  }
+}

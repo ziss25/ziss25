@@ -1,0 +1,38 @@
+// colors - primery
+$hue: 207;
+$red: rgb(180, 6, 6);
+$gray: #e5e7eb;
+$box-shadow: #d1d5db;
+//----
+$title-color: hsl($hue, 12%, 15%);
+$text-color: hsl($hue, 12%, 45%);
+$container-color: #fff;
+$body-color: hsl($hue, 100%, 99%);
+
+// dark
+$title-color-dark: #1e293b;
+
+// breakpoint
+$landscape: 768px;
+$tablet: 968px;
+$dekstop: 1200px;
+
+// size normal text
+$h2-font-size: 1.25rem;
+$h3-font-size: 1rem;
+$normal-font-size: 0.938rem;
+$small-font-size: 0.813rem;
+$smaller-font-size: 0.75rem;
+
+// size tablet > dekstop text
+$h2-font-size-big: 1.5rem;
+$h3-font-size-big: 1.25rem;
+$normal-font-size-big: 1rem;
+$small-font-size-big: 0.875rem;
+$smaller-font-size-big: 0.813rem;
+
+// utils
+$height-header: 50px;
+
+// radius border
+$md-rounded: 10px;

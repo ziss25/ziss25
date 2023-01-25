@@ -1,0 +1,29 @@
+.header {
+  position: fixed;
+  height: $height-header;
+  padding: 0 1.5rem;
+  justify-content: space-between;
+  align-items: center;
+  right: 0;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: white;
+  // responsive
+  @media (min-width: $tablet) {
+    padding: 0 3rem;
+    .header__title,
+    .header__icons {
+      font-size: $h3-font-size-big;
+    }
+  }
+}
+
+.header__title {
+  font-size: $h3-font-size;
+}
+
+.header__icons {
+  font-size: $h3-font-size;
+  cursor: pointer;
+}

@@ -1,0 +1,112 @@
+.content {
+  // border: 1px solid red;`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.skill {
+  width: 100%;
+  grid-template-columns: 100px 100px;
+  padding: 0px 1rem;
+  background-color: $gray;
+  justify-content: space-evenly;
+  padding: 2rem 1rem;
+  border-radius: $md-rounded;
+}
+
+.skill__item {
+  display: flex;
+  transform: translateX(6px);
+  // border: 1px solid blue;
+  cursor: pointer;
+
+  i {
+    transform: translateY(6px);
+    margin-right: 8px;
+    color: $red;
+  }
+  h3 {
+    font-size: $normal-font-size;
+    color: $title-color;
+  }
+  p {
+    font-size: $smaller-font-size;
+    color: $text-color;
+  }
+}
+
+.skil-information {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  // border: 1px solid green;
+}
+
+.project {
+  width: 80%;
+  grid-template-columns: repeat(1, 1fr);
+
+  @media (min-width: $tablet) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.project__item {
+  position: relative;
+  border-radius: $md-rounded;
+  overflow: hidden;
+  cursor: pointer;
+
+  // dikasih box shadow agar card nya lebih keliatan
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  background-color: $box-shadow;
+}
+
+.project__modal {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  position: absolute;
+  bottom: -1000px;
+  // bottom: 0;
+  transition: bottom 0.3s ease-in;
+  left: 0;
+  right: 0;
+  padding: 6px 12px;
+  height: 100%;
+  background: linear-gradient(180deg, hsla($hue, 24%, 40%, 0.3) 0%, hsla($hue, 24%, 4%, 1) 100%);
+
+  p {
+    color: white;
+    font-weight: 400;
+  }
+
+  h4 {
+    color: white;
+    margin-bottom: 0.25rem;
+  }
+
+  i {
+    background-color: $red;
+    color: white;
+    padding: 12px 10px;
+    border-radius: $md-rounded;
+    // border: 1px solid blue;
+    width: 40px;
+  }
+}
+
+// ketika item di hover naikkan bottom lalu kasih transition agar indah
+.project__item:hover {
+  .project__modal {
+    bottom: 0;
+    // top: 0;
+    transition: bottom 0.3s ease-in-out;
+  }
+}
+
+// utils for dynamic javascript
+.none {
+  display: none;
+}

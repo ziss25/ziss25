@@ -1,0 +1,27 @@
+.filter {
+  // border: 1px solid red;
+  justify-content: center;
+  background-color: $gray;
+  border-radius: $md-rounded;
+  margin-bottom: 2rem;
+  button {
+    width: 150px;
+    height: 40px;
+    font-weight: 600;
+    border-radius: $md-rounded;
+    border: none;
+    margin: 8px;
+    color: $title-color;
+    font-size: $normal-font-size;
+    background-color: $gray;
+    cursor: pointer;
+  }
+
+  .projects-btn {
+    // background-color: white;
+  }
+}
+
+.test {
+  background-color: red;
+}
